@@ -1,6 +1,6 @@
 import db from "../db/connection.js";
 import productData from "../models/Product.js";
-import productRawData from "../json/master.json" assert { type: "json" };
+import productRawData from "../json/items.json" assert { type: "json" };
 
 const insertData = async () => {
   await productData.create(productRawData);
